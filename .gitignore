@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.env
+.venv/
+.vscode/
+*.log
+logs/
+.cache/
+output/ # Usually, generated output is not committed, but up to you
+Sample pictures/ # Add Sample pictures directory
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS-specific
+.DS_Store
+Thumbs.db

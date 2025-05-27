@@ -1,0 +1,12 @@
+Pillow
+google-generativeai
+numpy
+trimesh
+PyVista
+jupyterlab
+notebook
+diskcache # For API response caching
+opencv-python # For image pre-processing before vectorization
+svgwrite # For creating/manipulating SVG files if needed
+python-dotenv # For loading .env files
+# Add pypotrace or other vectorization libraries once researched and confirmed
