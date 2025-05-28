@@ -17,6 +17,7 @@ GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY", "") # Fallback to empty string if n
 OUTPUT_DIR = "output/"
 LOG_DIR = "logs/" # Suggesting a dedicated log directory
 LOG_FILE_PREFIX = "run_log_"
+SAMPLE_IMAGE_DIR = "e:\\A Unity projects\\Battleship maker\\Sample pictures/"
 
 # Debugging
 DEBUG_FLAG = True # Set to True to force API calls even if cache exists, and for more verbose logging
@@ -27,6 +28,8 @@ SPLITTING_HEURISTIC_BACKGROUND_THRESHOLD = 0.95 # Percentage of pixels in middle
 # This might need to be more sophisticated, e.g. a function or a list of RGB tuples
 BACKGROUND_COLOR_MIN = (240, 240, 240) 
 BACKGROUND_COLOR_MAX = (255, 255, 255)
+USE_OPENCV_FALLBACK_FOR_HULL_MASK = True
+VECTORIZE_HULL_MASK_FALLBACK = True # Added missing configuration
 
 # Caching
 CACHE_DIR = ".cache/"

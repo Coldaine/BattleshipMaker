@@ -1,0 +1,61 @@
+{
+  "view_type": "side_view",
+  "ship_identification": "Russian Pre-Dreadnought Battleship (Gangut class)",
+  "transcribed_text": "RUSSIA.\nBATTLESHIPS.\nGangut.\nPetropavlovsk.\nPoltava.\nSevastopol.",
+  "hull": {
+    "description": "The main hull of the pre-dreadnought battleship, characterized by a long, relatively narrow structure typical of battleships of this era.",
+    "bounding_box_2d": [
+      10,
+      10,
+      990,
+      990
+    ],
+    "segmentation_mask_base64_png": null
+  },
+  "superstructure": {
+    "description": "The superstructure consists of a prominent central conning tower, and smaller deckhouses along the length of the ship. ",
+    "bounding_box_2d": [
+      450,
+      150,
+      600,
+      700
+    ],
+    "segmentation_mask_base64_png": null
+  },
+  "funnels": [],
+  "turrets": [
+    {
+      "description": "Forward main gun turrets",
+      "bounding_box_2d": [
+        150,
+        200,
+        250,
+        250
+      ],
+      "segmentation_mask_base64_png": null
+    },
+    {
+      "description": "Aft main gun turrets",
+      "bounding_box_2d": [
+        700,
+        200,
+        800,
+        250
+      ],
+      "segmentation_mask_base64_png": null
+    },
+    {
+      "description": "Midships main gun turrets",
+      "bounding_box_2d": [
+        400,
+        200,
+        500,
+        250
+      ],
+      "segmentation_mask_base64_png": null
+    }
+  ],
+  "bridge_or_tower": {
+    "description": "Tall central conning tower"
+  }
+}

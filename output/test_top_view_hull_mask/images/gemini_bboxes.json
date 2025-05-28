@@ -1,0 +1,59 @@
+{
+  "hull": {
+    "description": "Red-bottomed battleship hull",
+    "bounding_box_2d": [
+      76,
+      673,
+      924,
+      924
+    ],
+    "segmentation_mask_base64_png": ""
+  },
+  "superstructure": {
+    "description": "Battleship superstructure with multiple decks, turrets, and a main mast.",
+    "bounding_box_2d": [
+      200,
+      400,
+      800,
+      700
+    ],
+    "segmentation_mask_base64_png": ""
+  },
+  "turrets": [
+    {
+      "description": "Forward main turret",
+      "bounding_box_2d": [
+        240,
+        660,
+        370,
+        720
+      ],
+      "segmentation_mask_base64_png": ""
+    },
+    {
+      "description": "Aft main turret",
+      "bounding_box_2d": [
+        670,
+        660,
+        800,
+        720
+      ],
+      "segmentation_mask_base64_png": ""
+    }
+  ],
+  "funnels": [
+    {
+      "description": "Main funnel",
+      "bounding_box_2d": [
+        560,
+        570,
+        610,
+        660
+      ],
+      "segmentation_mask_base64_png": ""
+    }
+  ],
+  "bridge_or_tower": {
+    "description": "Main bridge integrated into the superstructure"
+  }
+}

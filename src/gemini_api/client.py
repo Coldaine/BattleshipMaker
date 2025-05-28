@@ -200,7 +200,18 @@ For segmentation masks, provide them only if the object is clearly identifiable 
         response = model.generate_content([image_part, prompt_text])
         
         # Extract the JSON response
-        json_response = response.generations[0].text
+        # Updated to handle the new response structure
+        # The 'response' object itself is the GenerateContentResponse
+        if hasattr(response, 'candidates') and response.candidates and \
+           hasattr(response.candidates[0], 'content') and response.candidates[0].content and \
+           hasattr(response.candidates[0].content, 'parts') and response.candidates[0].content.parts and \
+           hasattr(response.candidates[0].content.parts[0], 'text'):
+            json_response = response.candidates[0].content.parts[0].text
+        else:
+            logger.error(f"Gemini API response did not contain expected path to text for {image_identifier}.")
+            # Log the full response object for debugging
+            logger.debug(f"Full Gemini API response object: {response!r}") # Use !r for a more detailed representation
+            return None # Return None to indicate failure
 
         # Log the raw JSON response for debugging
         logger.info(f"Raw JSON response: {json_response}")

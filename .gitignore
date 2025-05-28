@@ -13,6 +13,7 @@ output/ # Usually, generated output is not committed, but up to you
 Sample pictures/ # Add Sample pictures directory
 
 # Jupyter Notebook
+*.ipynb
 .ipynb_checkpoints
 
 # OS-specific

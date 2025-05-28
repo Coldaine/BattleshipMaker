@@ -1,0 +1,66 @@
+{
+  "hull": {
+    "description": "The main hull of the ship, long and narrow with a pointed bow and stern.",
+    "bounding_box_2d": [
+      0,
+      180,
+      1000,
+      820
+    ],
+    "segmentation_mask_base64_png": null
+  },
+  "superstructure": {
+    "description": "A relatively minimal superstructure, with a central section possibly containing the bridge and other deck structures.",
+    "bounding_box_2d": [
+      350,
+      400,
+      650,
+      500
+    ],
+    "segmentation_mask_base64_png": null
+  },
+  "turrets": [
+    {
+      "description": "Forward main turret",
+      "bounding_box_2d": [
+        160,
+        400,
+        250,
+        500
+      ],
+      "segmentation_mask_base64_png": null
+    },
+    {
+      "description": "Aft main turret",
+      "bounding_box_2d": [
+        750,
+        400,
+        840,
+        500
+      ],
+      "segmentation_mask_base64_png": null
+    },
+    {
+      "description": "Port midships turret",
+      "bounding_box_2d": [
+        370,
+        400,
+        460,
+        500
+      ],
+      "segmentation_mask_base64_png": null
+    },
+    {
+      "description": "Starboard midships turret",
+      "bounding_box_2d": [
+        540,
+        400,
+        630,
+        500
+      ],
+      "segmentation_mask_base64_png": null
+    }
+  ],
+  "funnels": [],
+  "bridge_or_tower": null
+}
